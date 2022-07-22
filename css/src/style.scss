@@ -1,0 +1,747 @@
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url('../../fonts/Gilroy.ttf');
+    font-family: DotGothic16;
+    src: url('../../fonts/DotGothic16-Regular.ttf');
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url('../../fonts/Gilroy.ttf');
+}
+
+body {
+    background-color: #031923;
+    box-sizing: border-box;
+}
+
+.Header {
+    height: 112px;
+}
+
+.hero_section {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-image: url("../../img/hero_bg.png");
+    background-size: cover;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+    padding: 0 24px 0 24px;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    box-sizing: border-box;
+    color: #00FFA3;
+    font-weight: 600;
+
+}
+
+.navbar-light .navbar-toggler {
+    color: #ffffff;
+    border-color: #ffffff;
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+.navbar {
+    padding: 8px 120px 7px 128px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.h1_hero {
+    font-family: DotGothic16;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 84px;
+    letter-spacing: -0.25em;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 27%;
+}
+
+.h2_hero {
+    align-items: flex-end;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.button_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.button_book {
+    background: linear-gradient(#00D8A4, #009470);
+    width: 286px;
+    height: 59px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    color: #ffffff;
+    box-shadow: 6px 6px 17px rgba(3, 23, 32, 0.46);
+    border-radius: 20px 4px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tittle_carts,
+.tittle_booking {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.tittle_carts_h1,
+.tittle_booking_h1 {
+    font-family: 'DotGothic16';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 144px;
+    line-height: 209px;
+    text-align: right;
+    color: #FFFFFF;
+    opacity: 0.1;
+    margin-left: 120px;
+}
+
+.title_fastest,
+.tittle_book {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-left: auto;
+    padding-bottom: 25px;
+}
+
+.title_fastest h3,
+.tittle_book h3 {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: right;
+    letter-spacing: 0.25em;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+
+.fastest_carts,
+.book_booking {
+    font-family: 'DotGothic16';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 84px;
+    text-align: center;
+    letter-spacing: -0.25em;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+    margin-right: 121px;
+}
+
+.carts_line,
+.booking_line {
+    width: 219px;
+    border-top: 2px solid #FFFFFF;
+    padding-bottom: 9px;
+}
+
+@media (max-width: 990px) {
+    .tittle_carts {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    .tittle_carts_h1 {
+        margin-left: 0px;
+    }
+
+    .title_fastest,
+    .fastest_carts {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .title_fastest {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+.style {
+    background-color: transparent;
+    padding-top: 50px;
+}
+
+.carst_img h1 {
+    font-family: 'DotGothic16';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 52px;
+    text-align: center;
+    letter-spacing: -0.25em;
+    color: #FFFFFF;
+}
+
+.adult_cart h1 {
+    text-align: right;
+    margin-right: 47px;
+}
+
+.adult_cart h2 {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: right;
+    color: #FFFFFF;
+    margin-right: 47px;
+}
+
+.adult_cart h3,
+.track_info {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: right;
+    color: #FFFFFF;
+    margin-right: 47px;
+    margin-top: 23px;
+}
+
+.adult_cart p {
+    margin-bottom: 0px;
+}
+
+.child_cart h1 {
+    margin-top: 62px;
+}
+
+.for_two_cart h1 {
+    margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+    .carst_img h1 {
+        font-size: 22px;
+    }
+
+    .adult_cart h2 {
+        font-size: 18px;
+    }
+
+    track_info {
+        font-size: 14px;
+    }
+}
+
+.booking {
+    background-image: url("../../img/booking_bg.png");
+    background-size: cover;
+}
+
+.tittle_booking {
+    flex-direction: row;
+}
+
+.tittle_book {
+    margin-left: 121px;
+    margin-right: auto;
+    padding-bottom: 33px;
+}
+
+.book_booking {
+    margin-right: 8px;
+}
+
+.tittle_booking_h1 {
+    margin-left: 0;
+    margin-right: 121px;
+    padding-bottom: 8px;
+}
+
+.tittle_book h3 {
+    margin-left: 22px;
+}
+
+.booking_line {
+    width: 120px;
+}
+
+@media (max-width: 1400px) {
+    .tittle_booking {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-right: 0px;
+    }
+
+    .tittle_booking_h1 {
+        margin-right: 0px;
+    }
+
+    .tittle_book {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .tittle_book h3 {
+        margin-left: 0px;
+    }
+}
+
+.track_info {
+    text-align: left;
+    margin-left: 121px;
+    margin-top: 0px;
+}
+
+.track_info p {
+    margin-bottom: 0px;
+}
+
+.track_info_p1 {
+    padding-bottom: 20px;
+}
+
+.track_info_tittle {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 46px;
+    color: #00FFA3;
+    margin-left: 121px;
+}
+
+.book_track {
+    margin-top: 31px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 167px;
+}
+
+.button_track_box {
+    width: 35%;
+}
+
+.track_info_sec,
+.track_info_metre {
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.track_info_sec p {
+    margin-left: 98px;
+}
+
+.track_info_metre p {
+    margin-right: 0px;
+}
+
+@media (max-width: 1400px) {
+    .book_track {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0px;
+    }
+
+    .track_info_tittle,
+    .track_info,
+    .track_info_sec p {
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+.features_tittle {
+    margin-bottom: 49px;
+}
+
+@media (max-width: 1515px) {
+    .features_tittle {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    .features_tittle_h1 {
+        margin-left: 0px;
+    }
+
+    .our_tittle,
+    .prop_tittle {
+        margin-right: 0px;
+        margin-left: 0px;
+
+    }
+
+    .our_tittle {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../../img/f_bg.png);
+    background-size: cover;
+}
+
+.features_items {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    margin-bottom: 116px;
+}
+
+.features_item {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 513px;
+    height: 178px;
+    padding: 37px 20px 45px 37px;
+    margin-bottom: 46px;
+}
+
+.features_item {
+    position: relative;
+    background: #031822;
+    border-radius: 16px;
+}
+
+.features_item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -2px;
+    border-radius: inherit;
+    background-image: linear-gradient(0deg, #009470, #00D8A4);
+}
+
+.features_item img {
+    width: 100px;
+    height: 96px;
+}
+
+.features_item_tittle {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: left;
+    color: #FFFFFF;
+    margin-left: 25px;
+}
+
+.features_item_text {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin-left: 25px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact_line {
+    width: 218px;
+}
+
+.contact_text {
+    font-size: 18px;
+}
+
+.contact_text p {
+    margin-bottom: 12px;
+}
+
+#contact_text_adr {
+    color: #00FFA3;
+    margin-bottom: 0px;
+}
+
+.button_call_box {
+    margin-top: 47px;
+    margin-right: auto;
+    margin-left: 121px;
+}
+
+.button_call {
+    margin-right: auto;
+}
+
+@media (max-width: 1400px) {
+    .contact_text p {
+        text-align: left;
+        margin-left: 19%;
+    }
+}
+
+.map {
+    margin: auto;
+}
+
+.map_content {
+    border: 3px solid #009470;
+    border-radius: 16px;
+}
+
+@media (max-width: 1200px) {
+    .contacts {
+        flex-direction: column;
+    }
+
+    .button_call {
+        margin: 0px;
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../../img/footer_bg.png);
+    background-size: cover;
+    margin-top: 100px;
+}
+
+.footer_content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.footer_content p {
+    font-size: 16px;
+    width: 435px;
+}
+
+.footer_text {
+    margin: 16px auto 0 128px;
+}
+
+.footer_menu {
+    padding-top: 54px;
+}
+
+.links {
+    display: flex;
+    align-content: flex-end;
+    margin-top: auto;
+    margin-right: 120px;
+}
+
+@media (max-width: 900px) {
+    .footer_content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_text {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+@media (max-width: 600px) {
+    .navbar{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .h1_hero{
+        font-size: 30px;
+        line-height: 50px;
+        margin-top: 350px;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .tittle_carts_h1{
+        font-size: 118px;
+    }
+    .desktop_swiper{
+        display: none;
+    }
+    .tittle_booking_h1{
+        font-size: 90px;
+
+    }
+    .book_booking{
+        font-size: 30px;
+    }
+    .features_tittle_h1{
+        font-size: 75px;
+    }
+    .prop_tittle{
+        font-size: 37px;
+    }
+    .features_items{
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .features_item{
+        width: 315px;
+    }
+    .features_item_text{
+        font-size: 13px;
+        line-height: 13px;
+    }
+    .features_item_tittle{
+        font-size: 18px;
+    }
+    .features_item p{
+        margin-left: 20px;
+    }
+    .button_call_box{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .map_content{
+        width: 300px;
+    }
+    .hide{
+        display: hide;
+    }
+    .features_item_text p{
+        width: auto;
+        padding: 10px;
+    }
+    .links{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .carst_img h1 {
+        font-size: 20px;
+        line-height: 40px;
+        text-align: center;
+
+    }
+    
+    .adult_cart h1 {
+        text-align: center;
+        margin-right: 0px;
+    }
+    
+    .adult_cart h2 {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+
+        margin-right: 0px;
+    }
+    
+    .adult_cart h3,
+    .track_info {
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        margin-right: 0px;
+        margin-top: 23px;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hide{
+        display: none;
+    }
+
+
+}
