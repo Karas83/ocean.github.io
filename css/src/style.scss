@@ -87,6 +87,8 @@ color: rgba(255, 255, 255, 0.6);
 }
 .info__topimg{
     width: 100%;
+}
+.info__topimg-spec{
     clip-path: polygon(20% 0, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 15%)
 }
 .info__tittle-cont{
@@ -231,6 +233,7 @@ color: #FFFFFF;
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
+    margin-top: 10px;
     }
 
 .info__card{
@@ -332,6 +335,10 @@ margin: 0 0 10px 0;
     backdrop-filter: blur(18px);
     clip-path: polygon(15% 0,100% 0,100% 100%,50% 100%,0 100%,0 30%);
 }
+.info__buttons{
+    margin: 5% 0 5% 0;
+}
+
 @media (max-width: 1300px) {
     .info__card-spec{
         right: -20px;
@@ -355,5 +362,45 @@ margin: 0 0 10px 0;
     .info__topnft{
         order: 1;
     }
+    .info__tittle-cont{
+        margin: 10% 5% 0 5%;
+        width: 100%;
+        justify-content: center;
+    }
+    .info__globalstat {
+        justify-content: center;
+    }
+}
+@media (max-width: 520px) {
+    .info__tittle{
+        font-size: 42px;
 
+    }
+    .info__tittle2{
+        font-size: 14px;
+
+    }
+    .info__explore{
+        font-size: 12px;
+        width: 150px;
+        height: 50px;
+    }
+    .info__create{
+        font-size: 12px;
+    }
+    .info__globalstat h2{
+        font-size: 18px;
+    }
+    .info__globalstat h3{
+        font-size: 12px;
+    }
+
+}
+.top-nfts{
+    margin: 0 5% 0 5%;
+}
+.swiper{
+    font-weight: 700;
+    font-size: 23.0401px;
+    color: #FFFFFF;
 }
