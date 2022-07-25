@@ -83,7 +83,7 @@ color: rgba(255, 255, 255, 0.6);
 
 }
 .info__topnft{
-    margin: 10% auto 0 auto;
+    margin: 10% 10% 0 auto;
 }
 .info__topimg{
     width: 100%;
@@ -343,6 +343,15 @@ margin: 0 0 10px 0;
     .info__card-spec{
         right: -20px;
     }
+    .top-nfts_b2{
+        display: none;
+      }
+      .info__explore-spec{
+        display: block;
+      }
+      .info__topnft{
+        margin-right: auto;
+    }
 
 }
 
@@ -397,5 +406,123 @@ margin: 0 0 10px 0;
 
 }
 .top-nfts{
-    margin: 0 5% 0 5%;
+    margin: 10% 5% 0 5%;
 }
+.top-nfts_b1{
+    font-family: 'Orbitron';
+    font-size: 26px;
+    line-height: 25px;
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    border: none;
+    letter-spacing: 2px;
+}
+.top-nfts_b1:focus{
+    outline: none;
+    background: linear-gradient(89.89deg, #42A6E3 2.33%, #FF56F6 101.4%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+ }
+ .top-nfts_b1:hover{
+    background: linear-gradient(89.89deg, #42A6E3 2.33%, #FF56F6 101.4%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     background-clip: text;
+  }
+  .top-nfts_b2{
+    float: right;
+  }
+  .info__explore-spec{
+    display: none;
+  }
+  @media (max-width: 1300px) {
+      .info__explore-spec{
+        display: block;
+        margin: 40px auto 0 auto;
+      }
+
+}
+.exp{
+    margin: 10% 5% 0 5%;
+}
+.exp__tab{
+    width: 46%;
+    height: 98.39px;
+    margin: 3% 4% 3% 0;
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26.531px;
+    line-height: 33px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    background: transparent;
+    border-image: linear-gradient(92.23deg,#406aff 21.43%,#3bace2 50.63%,#b936ee 100%,#ff56f6 117.04%);
+    border-image-slice: 1;
+    }
+
+     .exp__tab:hover{
+        outline: none;
+        background: linear-gradient(92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);     
+        backdrop-filter: blur(276.481px);
+    
+     }
+     .exp__tab:focus{
+        outline: none;  
+     }
+     .tab-btn-active{
+        outline: none;
+        background: linear-gradient(92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);     
+        backdrop-filter: blur(276.481px);
+        color: #FFFFFF;
+     }
+    .exp__tabs{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    .exp__tabs-cont1{
+        width: 60%;
+    }
+    .exp__tabs-cont{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .top-nfts_b3{
+        display: block;
+        float: right;
+    }
+    .exp__tab-img{
+        margin: auto;
+        width: 100%;
+    }
+    .tab-content{
+        display: none;
+    }
+    .tab-content-active{
+        
+        display: block;
+    }
+    .content{
+        margin: 0 auto 0 auto;
+    }
+    @media (max-width: 1228px) {
+        .exp__tabs-cont1{
+            width: 100%;
+        }
+  }
+  @media (max-width: 600px) {
+    .exp__tab{
+        font-size: 13px;
+    }
+}
+
+
