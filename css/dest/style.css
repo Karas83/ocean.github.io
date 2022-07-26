@@ -8,7 +8,9 @@ body {
   background-size: cover;
 }
 
-.navbar-light .navbar-nav .nav-link, .info__curr-bind1, .info__curr-bind2 {
+.navbar-light .navbar-nav .nav-link,
+.info__curr-bind1,
+.info__curr-bind2 {
   font-family: "Orbitron", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -33,7 +35,8 @@ body {
   padding: 53px 5% 0 5%;
 }
 
-.logo-text li, .logo-text {
+.logo-text li,
+.logo-text {
   display: inline-block;
   margin: 0 0 0 0;
   padding: 0;
@@ -266,7 +269,10 @@ body {
   padding: 3%;
 }
 
-.info__card-tittle, .info__ja, .info__card p, .info__card h4 {
+.info__card-tittle,
+.info__ja,
+.info__card p,
+.info__card h4 {
   font-family: "Rajdhani";
   font-style: normal;
   font-weight: 700;
@@ -303,7 +309,8 @@ body {
   color: #FFFFFF;
 }
 
-.info__curr-bind2, .info__card-timer h5 {
+.info__curr-bind2,
+.info__card-timer h5 {
   font-family: "Rajdhani";
   font-style: normal;
   font-weight: 400;
@@ -348,7 +355,8 @@ body {
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
-.info__card-timer, .info__card-timer1 {
+.info__card-timer,
+.info__card-timer1 {
   margin-left: auto;
   padding-top: 5%;
 }
@@ -560,6 +568,63 @@ body {
   .exp__tab {
     font-size: 13px;
   }
+}
+.exp__slide {
+  background-image: url(../../img/expbg.png);
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.exp__slide-info {
+  margin: 0 auto 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.exp__slide-info h4 {
+  font-size: 31.6897px;
+  padding: 0 0 0 0;
+  justify-content: center;
+}
+
+.exp__slide-info h5 {
+  font-size: 19px;
+}
+
+.exp__slide-tittle {
+  margin: 0 auto 0 auto;
+  padding-top: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.exp__follow {
+  width: 60%;
+  margin: 5% auto 5% auto;
+  padding: 5% 0 10% 0;
+}
+
+.exp__slide-tittle img, .exp__slide-tittle div, .exp__slide-tittle span {
+  margin: 0 auto 0 auto;
+}
+
+.sw_ja {
+  font-weight: 400;
+  font-size: 20.1601px;
+  line-height: 46px;
+  color: #FFB1EE;
+}
+
+.exp__sw-tittle {
+  font-weight: 500;
+  font-size: 24.3201px;
+}
+
+.sw_ja1 {
+  padding: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
