@@ -627,4 +627,118 @@ body {
   padding: 0;
 }
 
+.top-sell__cont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.top-sell__tittle {
+  margin: 0 auto 0 auto;
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26.531px;
+  line-height: 33px;
+  color: #FFFFFF;
+  margin-bottom: 1%;
+}
+
+.top-sell__tittle span {
+  color: #FF56F6;
+}
+
+.top-sell h2 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17.6873px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.top-sell__seller {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  color: #FFFFFF;
+  border: 2.76px solid rgba(255, 255, 255, 0.2);
+  border-radius: 28.5719px;
+  padding: 1%;
+  margin: 1% 0;
+}
+
+.top-sell__seller-cont {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.top-sell__seller-img {
+  width: 18%;
+}
+
+.top-sell__seller h3 {
+  width: 40%;
+  font-size: 19.0479px;
+  line-height: 44px;
+  margin-bottom: 0;
+}
+
+.top-sell__seller p {
+  font-size: 13.7568px;
+  line-height: 44px;
+  margin-bottom: 0;
+}
+
+.top-seller__sellermarg1, .top-seller__sellermarg2 {
+  padding: 2% 3%;
+  background: rgba(0, 179, 71, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 17.5283px;
+  color: #00FF66;
+}
+
+.top-seller__sellermarg2 {
+  background: rgba(235, 20, 20, 0.15);
+  color: #FF0000;
+}
+
+@media (max-width: 1300px) {
+  .top-sell__seller-hide1 {
+    display: none;
+  }
+  .top-sell__seller {
+    width: 48%;
+  }
+}
+@media (max-width: 860px) {
+  .top-sell__seller h3 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .top-sell__seller p, .top-sell__seller span {
+    font-size: 10px;
+    line-height: 11px;
+  }
+}
+@media (max-width: 650px) {
+  .top-sell__seller-hide2 {
+    display: none;
+  }
+  .top-sell__seller {
+    width: 90%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
