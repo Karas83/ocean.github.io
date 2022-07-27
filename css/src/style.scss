@@ -38,9 +38,18 @@ button {
 }
 
 #navbar {
-    padding: 53px 5% 0 5%;
-}
+    padding: 1% 5%;
+    background-color: #200c3b;
 
+}
+@media (max-width: 991px) {
+    #navbar {
+        position: sticky;
+        top:0;
+        z-index: 2;
+    }
+
+}
 .logo-text li,
 .logo-text {
     display: inline-block;
